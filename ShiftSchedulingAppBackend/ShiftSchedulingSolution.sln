@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShiftScheduling.Database", "ShiftScheduling.Database\ShiftScheduling.Database.csproj", "{63B47A8E-864A-42AC-8078-175B2CD32903}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShiftScheduleWebApi", "ShiftScheduleWebApi\ShiftScheduleWebApi.csproj", "{E1F3A222-0C11-4F3E-B128-857CD24C8CDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{24C1A658-1841-4933-B7C0-AB706F5CD839}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63B47A8E-864A-42AC-8078-175B2CD32903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B47A8E-864A-42AC-8078-175B2CD32903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B47A8E-864A-42AC-8078-175B2CD32903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B47A8E-864A-42AC-8078-175B2CD32903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F3A222-0C11-4F3E-B128-857CD24C8CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F3A222-0C11-4F3E-B128-857CD24C8CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F3A222-0C11-4F3E-B128-857CD24C8CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F3A222-0C11-4F3E-B128-857CD24C8CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7981C47-9BE5-4255-B5B7-7A2AD76B9996}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,288 @@
+:root {
+  --primary-color: #007bff;
+  --hover-color: #0056b3;
+  --background-color: #f0f0f0;
+  --text-color: #333;
+  --font-stack: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --border-radius: 5px;
+  --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-stack);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* General Page Styles */
+.body-content {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: var(--box-shadow);
+  background-color: white;
+  border-radius: var(--border-radius);
+}
+
+.body-content-shifts-type, .body-content-shifts {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: var(--box-shadow);
+  background-color: white;
+  border-radius: var(--border-radius);
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* List Styles */
+.places-list, .shift-types-list, .shifts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.place-item, .shift-type-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+/* Button Styles */
+.button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  color: white;
+  transition: background-color 0.3s;
+}
+.delete-button{
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  /* black red */
+  background-color: #7a000c;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Input Field Styles */
+.input-field {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+/* Add Place Section */
+.add-place {
+  margin-top: 20px;
+}
+
+.button-group {
+  display: flex; /* Align buttons horizontally */
+  gap: 10px; /* Optional: Adjust the space between buttons */
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+/* Modal Background */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Modal Styles */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.modal-header, .modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.modal-title {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.modal-close-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-input, .modal-form-select {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-family: var(--font-stack);
+}
+
+.modal-form-button {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-form-button:hover {
+  background-color: var(--hover-color);
+}
+
+/* Adjusting the existing classes for modal inputs and buttons */
+.form-input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-family: var(--font-stack);
+}
+
+.form-select {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-family: var(--font-stack);
+}
+
+.form-button, .close-button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-button {
+  background-color: #dc3545; /* Red */
+}
+
+.form-button:hover, .close-button:hover {
+  background-color: var(--hover-color);
+}
+
+
+.error {
+  color: #D8000C; /* Red color for error text */
+  background-color: #FFD2D2; /* Light red background */
+  padding: 8px; /* Add some padding around the text */
+  margin-top: 4px; /* Add some space above the error message */
+  border-radius: 4px; /* Rounded corners for the error message box */
+  font-size: 0.875rem; /* Slightly smaller font size */
+  font-weight: bold; /* Make the font bold */
+}
+
+
+/* Additions for Login Component */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  background-color: white;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form .form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.login-form .form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+
+.login-form .form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form .form-button:hover {
+  background-color: var(--hover-color);
+}
