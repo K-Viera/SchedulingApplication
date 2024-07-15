@@ -426,3 +426,4 @@ FodyWeavers.xsd
 **/appsettings*.json
 
 SanaCommerceFront/public
+shift-scheduling-front/.env
